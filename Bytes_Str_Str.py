@@ -12,4 +12,5 @@ def to_str(bytes_or_str):
     return value  # Instance of str
 
 
-print(to_str(b'hello'))  # prints hello
+print(repr(to_str(b'foo')))  # repr returns canonical string representation of the object
+print(repr(to_str('bar')))
